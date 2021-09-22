@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kaisei HarunoUmi', serif;
+  scroll-behavior: smooth;
+}
+p{
+  font-weight: 300;
+  color: bisque;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(Concrete\ -\ Dark.jpg);
+  background-size: cover;
+}
+.banner  .head{
+  max-width: 900px;
+  text-align: center;
+}
+.banner .head h2{
+  font-size: 5em;
+  color: antiquewhite;
+
+  
+}
+.banner .head p{
+  font-size: 1em;
+  color: azure;
+}
+.btn{
+  font-size: 1em;
+  color: blanchedalmond;
+  background: brown;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none ;
+  letter-spacing: 2px;
+  transition: .2s;
+}
+.btn:hover{
+  letter-spacing: 7px;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+header.sticky{
+background: black;
+padding: 10px 100px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header #logo{
+  color: lightsteelblue;
+  font-weight: 700;
+  font-size: 3em;
+  text-decoration:none ;
+  }
+  header.sticky #logo{
+    color: lightsteelblue;
+    
+    }
+  header .navigation{
+    display: flex;
+    position: relative;
+  }
+  header .navigation li{
+list-style-type: none;
+margin-left: 30px;
+  }
+  header .navigation li a{
+    text-decoration: none;
+    font-weight: 300;
+    color: lightsteelblue;
+  }
+  header.sticky .navigation li a{
+    color: lightsteelblue;
+  }
+  header .navigation li a:hover{
+    color: brown;
+  }
+  section{
+    padding: 100px;
+}
+.row{
+  position: relative;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  }
+  .row .col50{
+    position: relative;
+    width:48%;
+    
+  }
+  .titletxt{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+  }
+  .titletxt span{
+    color: brown;
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  .row p{
+    color:brown;
+  }
+  .row .col50 .imgbx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+  .row .col50 .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .title p{
+    color: brown;
+  }
+  .menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .menu .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid white;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+  }
+  .menu .content .box .imgbx{
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .menu .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text{
+  padding: 15px 0 5px;
+}
+.menu .content .box .text h3{
+  font-weight: 400;
+  color: black;
+}
+.testimonials{
+background: url('back.jpg');
+background-size: cover;
+}
+.white .titletxt,
+.white  p{
+  color: antiquewhite;
+  }
+  .testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+  }
+  .testimonials .content .box{
+    width: 340px;
+    margin:20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .testimonials .content .box .imgbx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+  }.testimonials .content .box .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .content .text p{
+  color: black;
+}
+
+
+.contactform{
+ 
+  padding: 75px 50px;
+  background: brown;
+  box-shadow: 0 15px 50px rgb(0,0,0);
+  max-width: 500px;
+  margin-top: 50px;
+  align-items: center;
+  
+}
+.contactform h3{
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.contactform .inputbox{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+  width: 100%;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+.contactform .inputbox input[type="submit"]{
+  font-size: 1em;
+  color: brown;
+  background-color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  max-width: 100px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.copyright{
+padding: 8px 40px;
+border-top: 1px solid rgba(0,0,0, 0.1);
+text-align: center;
+}
+.copyright a,
+.copyright p{
+  color: black;
+  text-decoration: none;
+}
